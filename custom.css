@@ -94,7 +94,7 @@ p {
 @media (max-width: 520px) {
 
   .mainlogo img {
-    width: 380px;
+    width: 100%;
     text-align: center;
   }
 
