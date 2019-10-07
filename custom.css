@@ -3,6 +3,10 @@ body {
   background-color: #424046;
 }
 
+a.ml50.sofology img {
+  display: none;
+}
+
 .logo {
   text-align: center;
   padding-top: 30px;
