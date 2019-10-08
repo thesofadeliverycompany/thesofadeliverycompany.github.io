@@ -61,7 +61,7 @@
     crossorigin="anonymous"></script> -->
 
 
-    <section id="CookieConsent">
+    <!-- <section id="CookieConsent" style="display:none;">
       <div class="innerCC">
         <h2>Privacy and Cookies</h2>
         <p>For this website to run at its best, we ask the browser (like Google Chrome and Safari) for a little personal
@@ -70,40 +70,9 @@
           would like to learn more about the information we store, or how it is used please read our&nbsp;<a
             target="_blank" href="https://www.dfs.co.uk/cookies">privacy and cookies policy</a>. </p> <a id="closeCCButton">I Accept<span>x</span></a>
       </div>
-    </section>
+    </section> -->
 
-    <script>
-
-      if (document.cookie.indexOf('cookiesAccepted=true') < 0) {
-     // Animate into View after 3 seconds
-      setTimeout(function () {
-        document.getElementById('CookieConsent').style.bottom = 0;
-      }, 3000);
-
-
-      // click event listener
-      document.getElementById('closeCCButton').addEventListener('click', function (e) {
-        e.target.parentElement.parentElement.style.opacity = 0;
-        e.target.parentElement.parentElement.style.bottom = -240 + 'px';
-
-        // Set a cookie to expire in 90 days
-        var days = 90,
-          name = 'cookiesAccepted',
-          value = 'true',
-          dateNow = new Date();
-        dateNow.setTime(dateNow.getTime() + (days * 24 * 60 * 60 * 1000));
-        var expires = "; expires=" + dateNow.toGMTString();
-        document.cookie = name + "=" + value + expires + "; path=/";
-        console.log('Cookie policy cookie set: expires: ', expires);
-      }, 
-      {
-        passive: true
-      });
-
-    } else {
-        console.log('Cookie policy already accepted');
-      }
-    </script>
+    
 </body>
 
 </html>
